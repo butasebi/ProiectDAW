@@ -1,0 +1,25 @@
+<div class = "container"> 
+    <h1 class = "title">
+        {{serviceauto.name | profile}}
+    </h1>
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{serviceauto.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4204018.jpg" alt="Photo of " class = "imagine">
+        <mat-card-content>
+          <p>
+            Id: {{serviceauto.id}}
+          </p>
+          <p>
+            Name: {{serviceauto.name}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions class = "matcard">
+            <button class = "button" mat-button (click) = "goToEmployees()">View Employees</button>
+            <button class = "button" mat-button (click) = "goToClients()">View Clients</button>
+          </mat-card-actions>
+      </mat-card>
+      
+</div>

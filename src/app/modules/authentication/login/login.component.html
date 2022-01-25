@@ -1,0 +1,23 @@
+<div class = "container">
+    <h1 class = "title">
+        {{title}}
+    </h1>
+<form [formGroup] = "loginForm" (ngSubmit) = "onLogin()"  class = "login-form">
+    <p class = "label">
+        Username
+    </p>
+    <input formControlName = "email" placeholder = "Username" type = "text">
+    <p class = "label">
+        Password
+    </p>
+    <input formControlName = "password" placeholder = "Password" type = "password">
+    <p></p>
+    <button type = "submit"> Login </button>
+    <p></p>
+    <button (click) = "onLogout()"> Logout </button>
+    <p></p>
+    <button (click) = "gotoServices()"> Go to Services Auto page</button>
+    <p></p>
+    <a routerLink = "/register">Don't have an account? Register here.</a>
+</form>
+</div>

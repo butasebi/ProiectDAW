@@ -1,0 +1,22 @@
+<div class ="container">
+    <h1>{{title}}</h1>
+
+    <form [formGroup] = "servicesForm" class = "edit-form" >
+        <mat-form-field appearance="outline">
+            <mat-label>Service Id</mat-label>
+            <input matInput placeholder = "Id" formControlName = "id">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Service Name</mat-label>
+            <input matInput placeholder = "Name" formControlName = "name">
+        </mat-form-field>
+    </form>
+    <div class ="actions">
+        <div class = "button-wrapper" (click) = "closeDialog()">
+            Cancel
+        </div>
+        <div class = "button-wrapper" (click) = "saveDialog()">
+            Save
+        </div>
+    </div>
+</div>
